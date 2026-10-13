@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --heading-color: #ffffff;
+            --accent-color: #2f81f7;
+            --border-color: #30363d;
+            --tag-bg: #21262d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 0;
+        }
+
+        /* Container */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 2rem 0 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+
+        .badge {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 600px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background-color: var(--tag-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--heading-color);
+        }
+
+        /* Education & Lists */
+        ul {
+            list-style-type: none;
+        }
+
+        .edu-item {
+            margin-bottom: 1rem;
+        }
+
+        .edu-item h3 {
+            color: var(--heading-color);
+            font-size: 1.15rem;
+        }
+
+        .edu-subtitle {
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        /* Contact List */
+        .contact-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #8b949e;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="badge">Student & Learner</div>
+            <h1>Hi, I'm Mulungi Peninah Were.</h1>
+            <p>A student at Uganda Christian University doing a Bachelor of Science in Computer Science exploring computing, communication, and the power of storytelling through literature.</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About me</h2>
+            <p>I am a passionate software enthusiast and student dedicated to understanding how systems work from the hardware level upto high level appliation software.</p>
+            <p>Whether i am low level programming in C, conducting data analysis and visualisation in Python or configuring development environments, I enjoy turning complex challenges into organised, practical solutions. Beyond coding, I value structured workflows, clear project documentation and collaborative learning.</p>
+            <p> Alongside my technical studies, I have a profound love for literature, finding inspiration in how stories, words, and ideas connect people. I believe that reading widely sharpens my analytical thinking, deepens my attention to detail and fosters empathy. "There is no agony like bearing an untold story inside you" - Maya Angelou </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills & interests</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">C programming</span>
+                <span class="skill-tag">Data Enumeration</span>
+                <span class="skill-tag">Literature & Reading</span>
+                <span class="skill-tag">Problem solving</span>
+                <span class="skill-tag">Improvisation & Adaptability</span>
+                <span class="skill-tag">Budgeting & Forecasting</span>
+                <span class="skill-tag">Animal Husbandry & Welfare</span>
+                <span class="skill-tag">Vendor & Client Relations</span>
+                <span class="skill-tag">Operations Management</span>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+            <h2>Languages</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">English (Fluent)</span>
+                <span class="skill-tag">Luganda (Fluent)</span>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <h3>Uganda Christian University</h3>
+                <div class="edu-subtitle">Student</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:werepenny@gmail.com">werepenny@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/werepeninah" target="_blank">github.com/werepeninah</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Mulungi Peninah Were</p>
+        </footer> 
+
+    </div>
+
+</body>
+</html>
